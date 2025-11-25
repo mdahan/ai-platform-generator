@@ -25,7 +25,13 @@
       "Bash(node scripts/migrate-projects.js:*)",
       "Bash(node:*)",
       "Bash(ai-engine/.env)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git remote remove:*)"
     ],
     "deny": [],
     "ask": []
