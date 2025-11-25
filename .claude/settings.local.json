@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(cat:*)",
+      "Bash(tasklist /FI 'IMAGENAME eq node.exe')",
+      "Bash(tasklist:*)",
+      "Bash(taskkill //F //PID 7516)",
+      "Bash(taskkill //F //PID 28900)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install)",
+      "Bash(findstr:*)",
+      "Bash(taskkill //F //PID 10964 //PID 18024)",
+      "Bash(node test-system-prompt.js:*)",
+      "Bash(dir:*)",
+      "Bash(find:*)",
+      "Bash(timeout 5 node:*)",
+      "Bash(npm start)",
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(nul)",
+      "Bash(taskkill:*)",
+      "Bash(node scripts/migrate-projects.js:*)",
+      "Bash(node:*)",
+      "Bash(ai-engine/.env)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,6 @@
+# API Configuration
+NEXT_PUBLIC_API_URL=http://localhost:{{BACKEND_PORT}}/api
+
+# App Configuration
+NEXT_PUBLIC_APP_NAME={{PROJECT_DISPLAY_NAME}}
+NEXT_PUBLIC_APP_ENV=development
