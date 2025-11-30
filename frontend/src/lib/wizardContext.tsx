@@ -82,16 +82,15 @@ export function WizardProvider({ children }: { children: ReactNode }) {
     setError(null);
 
     try {
+      // Send features at root level as backend expects
       const result = await api.createProject({
         name: data.appName,
         description: data.description,
-        config: {
-          industry: data.industry,
-          features: data.features,
-          integrations: data.integrations,
-          multiTenant: data.multiTenant,
-          authentication: data.authentication,
-        },
+        industry: data.industry,
+        features: data.features,
+        integrations: data.integrations,
+        multiTenant: data.multiTenant,
+        authentication: data.authentication,
       });
 
       if (result.success && result.data) {
