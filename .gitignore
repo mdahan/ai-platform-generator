@@ -70,3 +70,14 @@ ai-engine/test-environments/
 # Runtime data
 backend/data/projects.json
 backend/data/port-assignments.json
+
+# Terraform
+infrastructure/terraform/.terraform/
+infrastructure/terraform/*.tfstate
+infrastructure/terraform/*.tfstate.backup
+infrastructure/terraform/.terraform.lock.hcl
+infrastructure/terraform/terraform.tfvars
+infrastructure/terraform/*.auto.tfvars
+
+# Docker
+*.tar

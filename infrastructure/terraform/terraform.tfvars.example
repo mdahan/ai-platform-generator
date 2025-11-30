@@ -1,0 +1,33 @@
+# Example Terraform Variables
+# Copy this file to terraform.tfvars and fill in your values
+
+# AWS Configuration
+aws_region  = "us-east-1"
+environment = "dev"
+
+# Project Settings
+project_name = "ai-platform"
+
+# API Keys (required)
+anthropic_api_key = "sk-ant-api03-your-api-key-here"
+
+# Optional: Custom domain
+# domain_name = "aiplatform.yourdomain.com"
+
+# ECS Resource Configuration (adjust based on needs)
+backend_cpu     = 512    # 0.5 vCPU
+backend_memory  = 1024   # 1 GB
+frontend_cpu    = 256    # 0.25 vCPU
+frontend_memory = 512    # 0.5 GB
+desired_count   = 1      # Number of tasks
+
+# Database (future use)
+enable_rds        = false
+db_instance_class = "db.t3.micro"
+
+# Resource Tags
+tags = {
+  Project   = "ai-platform-generator"
+  ManagedBy = "terraform"
+  Owner     = "your-team"
+}
